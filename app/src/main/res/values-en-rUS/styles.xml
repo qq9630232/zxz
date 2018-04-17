@@ -1,0 +1,477 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme">
+
+    </style>
+    <!---->
+    <!--<style name="ImageTransparentTheme" parent="Theme.AppCompat.NoActionBar">-->
+    <!---->
+    <!--</style>-->
+
+    <style name="NoBgDialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@color/transparent</item>
+
+    </style>
+
+    <!--tablayout-->
+    <style name="CustomTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabMaxWidth">30dp</item>
+        <item name="tabIndicatorColor">@color/text_red</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+    </style>
+
+    <style name="toolbar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <!--<item name="android:paddingTop">@dimen/status_bar_height</item>-->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+
+    <!--tab上的字-->
+    <style name="tab_main_text">
+        <item name="android:paddingTop">@dimen/margin_top_tab_main</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@drawable/tab_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/textsize2</item>
+    </style>
+
+
+    <!--check 暗色按钮-->
+    <style name="category_check_btn">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:background">@drawable/main_category_selector</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="title_btn">
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="nice_spinner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+    </style>
+
+    <!--nice spinner-->
+    <declare-styleable name="NiceSpinner">
+        <attr name="arrowTint" format="color" />
+        <attr name="hideArrow" format="boolean" />
+    </declare-styleable>
+
+    <style name="paddingStyle">
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="paddingStyle_small">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <!--小的标签按钮-->
+    <style name="labelpaddingStyle">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">@dimen/textsize1</item>
+
+    </style>
+
+    <!--侧滑的recycler_view_item-->
+    <style name="UndoButtonStyle">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--最最小的文字样式-->
+    <style name="text_common_smallsmallest">
+        <item name="android:textColor">@color/text_gray2</item>
+        <item name="android:textSize">@dimen/textsize0</item>
+        <!--<item name="android:gravity">center</item>-->
+
+
+    </style>
+    <!--最小的文字样式-->
+    <style name="text_common_smallest">
+        <item name="android:textColor">@color/bg_gray</item>
+        <item name="android:textSize">@dimen/textsize1</item>
+        <!--<item name="android:gravity">center</item>-->
+
+
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="run_text_common">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="text_common">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="text_common_moran_small">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="menu_text_common">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginLeft">23dp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="menu_text_common_l">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginLeft">23dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="text_common_gray2">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--正常的文字样式-->
+    <style name="text_common_white">
+        <item name="android:textColor">@drawable/text_selector</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--正常的文字样式-->
+    <style name="text_common_small">
+        <item name="android:textColor">@color/black4</item>
+        <item name="android:textSize">@dimen/textsize2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+    <!--正常的文字样式-pink-->
+    <style name="text_common_pink">
+        <item name="android:textColor">#ff0065</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+        <!--<item name="android:gravity">center</item>-->
+
+    </style>
+    <!--正常的文字样式-grey3-->
+    <style name="text_common_gray3">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">@dimen/textsize2</item>
+        <!--<item name="android:gravity">center</item>-->
+
+
+    </style>
+    <!--正常的文字样式-grey2-->
+    <style name="run_text_common_gray">
+        <item name="android:textColor">#bfbfbf</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <!--正常的文字样式-grey3-->
+    <style name="run_text_common_small">
+        <item name="android:textColor">@color/run_text_gray_more</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!--<item name="android:gravity">center</item>-->
+
+    <!--正常的文字样式-grey-->
+    <style name="text_common_grey">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <!--正常的文字样式-grey-->
+    <style name="text_common_grey_light">
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--偏小的文字样式-white-->
+    <style name="text_common_small_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize2</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="calendar_text">
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+        <!--<item name="android:gravity">center</item>-->
+
+    </style>
+
+
+    <!--偏大的文字样式-->
+    <style name="text_common_big">
+        <item name="android:textColor">@color/black4</item>
+        <item name="android:textSize">@dimen/textsize4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--偏大的文字样式-white-->
+    <style name="text_common_big_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize4</item>
+        <!--<item name="android:gravity">center</item>-->
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+    <!--巨大的文字样式-pink-->
+    <style name="text_common_bigger_pink">
+        <item name="android:textColor">#fb0a47</item>
+        <item name="android:textSize">@dimen/textsize6</item>
+        <!--<item name="android:gravity">center</item>-->
+
+
+    </style>
+    <!--巨大的文字样式-white-->
+    <style name="text_common_bigger_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize7</item>
+        <!--<item name="android:gravity">center</item>-->
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <!--正常的文字样式-yellow-->
+    <style name="text_common_yellow">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/textsize3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义Dialog -->
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <declare-styleable name="EaseChatExtendMenu">
+        <attr name="numColumns" format="integer" />
+    </declare-styleable>
+
+    <style name="CircleProgress">
+        <item name="circleW">@dimen/margin_no_login</item>
+
+    </style>
+
+    <!--我的标签 样式-->
+    <style name="mine_item_item">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:text">摇滚乐队</item>
+        <item name="android:textColor">#999999</item>
+
+
+    </style>
+
+
+    <!--tag group 标签组-->
+    <style name="MyTagGroup" parent="TagGroup">
+        <item name="atg_backgroundColor">@color/white</item>
+        <item name="atg_borderColor">@color/black4</item>
+        <item name="atg_textColor">@color/text_red</item>
+        <item name="atg_textSize">@dimen/textsize3</item>
+        <item name="atg_checkable">true</item>
+        <item name="atg_verticalSpacing">15dp</item>
+        <item name="atg_horizontalSpacing">15dp</item>
+        <item name="atg_checkedTextColor">@color/white</item>
+        <item name="atg_checkedBackgroundColor">@color/text_red</item>
+        <item name="atg_checkedBorderColor">@color/black4</item>
+
+    </style>
+
+
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/add_tag</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">2dp</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+
+
+    <!--小的灰色字体-->
+    <style name="text_little_grey">
+        <item name="android:textColor">@color/black4</item>
+        <item name="android:textSize">@dimen/textsize2</item>
+    </style>
+
+
+
+    <!--popwindow  show hidden-->
+    <!--  这个是加入的代码 -->
+    <style name="mypopwindow_anim_style">
+
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/pop_show_anim</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pop_hidden_anim</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="btn_bottommenu">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="filler_15dip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="back_image">
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_width">33dp</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@mipmap/back</item>
+    </style>
+
+    <style name="UnityThemeSelector" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+    </style>
+</resources>

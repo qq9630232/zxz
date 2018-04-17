@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Moran</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--splash activity-->
+    <string name="splash_teach">User Guide</string>
+    <string name="waiting">Waiting...</string>
+    <string name="downloading">Downloading...</string>
+    <string name="auto_shut">Automatic shutdown</string>
+    <string name="wifi_des">Scan the QR code at "Connect Wifi" in AT Museum App</string>
+    <string name="wifi_connecting">Connecting WiFi</string>
+    <string name="default_paint">Default Playlist</string>
+    <string name="news_paint">New Entry</string>
+    <string name="reset_app"> Reset to factory settings</string>
+    <string name="sys_resume"> System Resuming</string>
+    <string name="swipe_left"> Swipe left to \nshow previous work</string>
+    <string name="swipe_right">Swipe right to \nshow next work</string>
+    <string name="swipe_up">Swipe up to learn more\n about this painting</string>
+    <string name="swipe_down">Swipe down to hide \ninformation of this painting</string>
+    <string name="any_key">Touch any keys on remote control to skip this user guide</string>
+    <string name="touch_area">Gesture recognition area-Please wave your hand</string>
+    <string name="band_mine1">Please scan the QR code on “Add Device” page</string>
+    <string name="band_mine2">at AT Museum App</string>
+    <string name="light_choose">Screen brightness</string>
+    <string name="collected">Collect Successfully</string>
+    <string name="collect">Canceled</string>
+    <string name="light_mode">SScreen brightness</string>
+    <string name="light_normal">Normal mode</string>
+    <string name="light_sleep">Sleeping mode</string>
+    <string name="light_night">Night mode</string>
+    <string name="light_sensor">Sensor sensitivity</string>
+    <string name="light_turn">Screen off with low ambient light</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="delete_paint">Do you want to delete this painting ?</string>
+    <string name="delete_picture">Do you want to delete this picture ?</string>
+    <string name="sys_preference">System Settings</string>
+    <string name="rotation_screen">Rotate screen orientation</string>
+    <string name="entrance_ar">AR Tricks</string>
+    <string name="light_setting">Screen Brightness setting</string>
+    <string name="play_time">Play time setting</string>
+    <string name="play_time_set">Play time : </string>
+    <string name="band_device">Device connecting</string>
+    <string name="download">Download AT Museum App</string>
+    <string name="wifi_conn">WiFi connection</string>
+    <string name="language">Language</string>
+    <string name="auto_shutdown">Automatic shutdown</string>
+    <string name="current_version">Version:</string>
+    <string name="detect_new_version">Has detected a new version of system</string>
+    <string name="about_device">About this device</string>
+    <string name="sys_update">System update</string>
+    <string name="reset_sys">Reset the device</string>
+    <string name="download_qr_code">Scan QR code - AT Museum App is available for iOS and Android platforms</string>
+    <string name="cur_version_des">Is the latest version of this system</string>
+    <string name="cur_version_title">Current firmware version</string>
+    <string name="shutdown_time_num_des">System will shutdown in </string>
+    <string name="device_name">Device name:</string>
+    <string name="total_storage">Total storage:</string>
+    <string name="storage_available">Storage available</string>
+    <string name="version_code">Version:</string>
+    <string name="serial_code">Serial#:</string>
+    <string name="mode_code">Model:</string>
+    <string name="wifi_address">WiFi address:</string>
+    <string name="bluetooth_address">Bluetooth address:</string>
+    <string name="band_success">Now Paired</string>
+    <string name="band_failed">Pairing failed</string>
+    <string name="back">Back</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="user_wrong">Username or password is wrong</string>
+    <string name="a_seconds">15seconds</string>
+    <string name="b_seconds">30seconds</string>
+    <string name="a_minutes">2minutes</string>
+    <string name="b_minutes">10minutes</string>
+    <string name="c_minutes">30minutes</string>
+    <string name="d_minutes">15minutes</string>
+    <string name="e_minutes">60minutes</string>
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!--isChinese 提取-->
+    <string name="will_restart_app">Will restart the App to complete changing language</string>
+    <string name="resetting">Resetting</string>
+    <string name="reset_in_progress">Completed</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="cannot_del_all">Cannot delete all picture</string>
+    <string name="connected">Connected</string>
+    <string name="cannot_del_default">The default painting list and the latest news cannot be deleted</string>
+    <string name="canceled">Canceled</string>
+    <string name="has_setted">Shutdown in </string>
+    <string name="has_setted_min">minutes</string>
+    <string name="light_success">Set screen light successfully</string>
+    <string name="install">Installing</string>
+    <string name="sys_will_restart1">System will shutdown in</string>
+    <string name="sys_will_restart2">seconds</string>
+    <string name="cur_ver">Current version:</string>
+    <string name="cur_ver_ed">You are using the latest version</string>
+    <string name="unavailable">Unavailable</string>
+
+    <!--<string name="auto_shut">Automatic shutdown</string>-->
+
+
+
+
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_act_detail">ActDetailActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="net_dissconncted"> No internet connection</string>
+    <string name="title_activity_invite">InviteActivity</string>
+    <string name="title_activity_pk_all">PkAllActivity</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="title_activity_no_login">NoLoginActivity</string>
+    <string name="title_activity_will_login">WillLoginActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_register_next">RegisterNextActivity</string>
+    <string name="title_activity_getback">GetBackActivity</string>
+    <string name="title_activity_getback_next">GetBackNextActivity</string>
+    <string name="action_undo">UNDO</string>
+    <string name="action_delete">DELETE</string>
+    <string name="title_activity_blank_fragment">BlankFragmentActivity</string>
+    <string name="title_activity_my_feng_coin">MyFengCoinActivity</string>
+    <string name="title_activity_other_detail">OtherDetail</string>
+    <string name="title_activity_album">AlbumActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="title_activity_upload_pic2_album">UploadPic2Album</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+
+    <string name="title_activity_edit_album">EditAlbumActivity</string>
+    <string name="title_activity_category_edit">CategoryEditActivity</string>
+    <string name="title_activity_act_record">ActRecordActivity</string>
+    <string name="title_activity_pk_title">PkTitleActivity</string>
+
+    <string name="title_activity_receive_score">ReceiveScoreActivity</string>
+    <string name="title_activity_join_list">JoinListActivity</string>
+    <string name="title_activity_tips_step">TipsStepActivity</string>
+    <!--<string name="activityrecord">ActivityRecordListActivity</string>-->
+
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:layout_width="480dp"
+    android:paddingTop="240dp"
+    android:layout_height="1360dp">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/image_recycler"-->
+    <!--android:src="@mipmap/recycler_temp_land"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:layout_width="380dp"-->
+    <!--android:layout_height="190dp" />-->
+
+    <ImageView
+        android:id="@+id/image_recycler"
+        android:src="@mipmap/recycler_temp_land"
+        android:scaleType="fitXY"
+        android:layout_width="360dp"
+        android:layout_height="960dp" />
+
+    <TextView
+        android:id="@+id/paint_name"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="200dp"
+        style="@style/text_common_moran_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

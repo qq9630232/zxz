@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/splash_bg_land"
+    android:layout_width="match_parent"
+    android:id="@+id/root_bg"
+    android:layout_height="match_parent"
+    tools:context="com.tablet.moran.activity.ConnectWifiActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/back_layout"/>
+
+        <FrameLayout
+            android:id="@+id/scan_wifi_FL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/wifi_des"
+                style="@style/text_common"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="100dp"
+                android:textSize="28sp"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content" />
+
+            <SurfaceView
+                android:id="@+id/preview_view"
+                android:layout_width="1200dp"
+                android:layout_height="700dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+
+            <com.zxing.view.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

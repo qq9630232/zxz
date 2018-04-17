@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg_land"
+    tools:context="com.tablet.moran.activity.SplashActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/splash_teach"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/text_common"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:background="@mipmap/splash_circle_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:paddingLeft="70dp"
+            android:paddingTop="90dp"
+            android:paddingRight="70dp"
+            android:paddingBottom="70dp"
+            android:layout_width="500dp"
+            android:layout_height="500dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@mipmap/splash_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:text="@string/swipe_left"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="right"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@mipmap/splash_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:text="@string/swipe_down"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="left|bottom"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@mipmap/splash_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:text="@string/swipe_up"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="right|bottom"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@mipmap/splash_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:text="@string/swipe_down"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/gesture_img"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="85dp"
+            android:visibility="gone"
+            android:src="@mipmap/splash_next"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="@string/any_key"
+            android:gravity="center"
+            style="@style/text_common"
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <!--<ImageView
+            android:src="@mipmap/guard_gesture_h"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="56dp"
+            android:layout_width="57dp"
+            android:layout_height="1046dp" />-->
+
+        <FrameLayout
+            android:layout_gravity="left"
+            android:layout_marginLeft="58dp"
+            android:layout_width="57dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@color/white"
+                android:layout_width="6dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_height="226dp" />
+            <TextView
+                android:text="@string/touch_area"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/white"
+                android:layout_width="6dp"
+                android:layout_height="226dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

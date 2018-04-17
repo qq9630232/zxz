@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    tools:context="com.tablet.moran.activity.ConnectWifiActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/back_layout" />
+
+        <FrameLayout
+            android:id="@+id/scan_wifi_FL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_wifi"
+                style="@style/text_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="400dp"
+                android:text="@string/wifi_des"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/title_wifi_land"
+                style="@style/text_common"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="435dp"
+                android:text="@string/wifi_des"
+                android:textSize="38sp" />
+
+            <SurfaceView
+                android:id="@+id/preview_view"
+                android:layout_width="800dp"
+                android:layout_height="670dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center" />
+
+
+            <com.zxing.view.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

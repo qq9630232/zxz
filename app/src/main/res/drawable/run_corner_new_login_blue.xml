@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--圆角形状4dp-->
+    <solid android:color="@color/run_new_login_main" />
+
+    <corners android:radius="5dp" />
+
+    <size android:height="40dp"
+        android:width="50dp"/>
+
+</shape>

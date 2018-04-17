@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    tools:context="com.tablet.moran.activity.GallerySettingActivity">
+
+    <!--中间内容区域-->
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/menu_anim"
+            android:background="@drawable/s_menu_anim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.tablet.moran.view.CircleMenuView
+            android:id="@+id/circle_menu"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/back_menu_btn"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/back"
+                    style="@style/menu_text_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chinese_menu_btn"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/chinese"
+                    style="@style/menu_text_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/english_menu_btn"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="English"
+                    style="@style/menu_text_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--<ImageView
+                    android:id="@+id/tip_update_tv"
+                    android:src="@mipmap/tip_update"
+                    android:layout_marginLeft="7dp"
+                    android:visibility="go"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />-->
+            </LinearLayout>
+
+        </com.tablet.moran.view.CircleMenuView>
+
+
+    </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>

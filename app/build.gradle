@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.tablet.moran"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets.main {
+        jni.srcDirs = []
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    aaptOptions {
+        noCompress '.unity3d', '.ress', '.resource', '.obb'
+    }
+
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "Mns8qkQrw97I5dheEUudD9",
+                    GETUI_APP_KEY   : "Uz1EqVl09r8BlaBPKSOej1",
+                    GETUI_APP_SECRET: "eG95I27rwE8arTz8OgvtS5",
+                    push_receiver   : "com.igexin.sdk.action.kLAj2TTHFk7nikKcWfLGI1",
+                    chat_huanxin    : "stone#stonemomo",
+                    baidu_map       : "geUemROR8O3ApfFZt2qWBxGrOa8lcQ1u",
+                    short_link      : "moran",
+                    PACKAGE_NAME    : "com.tablet.moran"
+            ];
+            ndk {
+                abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+
+            }
+
+        }
+        release {
+            manifestPlaceholders = [
+
+                    GETUI_APP_ID    : "06yf0uT9v89scCeubrfXz3",
+                    GETUI_APP_KEY   : "Aq5WV3ukSm8l3OX7IIlWv7",
+                    GETUI_APP_SECRET: "13fggPqHevAbqjy8OOuaw7",
+                    push_receiver   : "com.igexin.sdk.action.wMogR16WLw7ZjxFa8D94m2",
+                    chat_huanxin    : "stone#stonemomo",
+                    baidu_map       : "geUemROR8O3ApfFZt2qWBxGrOa8lcQ1u",
+                    short_link      : "moran",
+                    PACKAGE_NAME    : "com.tablet.moran"
+
+            ];
+//            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/fastjson-1.1.40.jar')
+    //    compile files('libs/butterknife-5.1.2.jar')
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    repositories { maven { url "https://jitpack.io" } }
+    compile 'com.romandanylyk:pageindicatorview:0.1.1'
+    compile 'com.getui:sdk:2.9.0.0'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.5.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.github.vajro:MaterialDesignLibrary:1.6'
+    compile 'me.drakeet.materialdialog:library:1.2.2'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:+'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_WeiXin_Full.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
+    compile files('libs/EasyAR.jar')
+    compile files('libs/unity-classes.jar')
+    compile files('libs/zxing.jar')
+    compile project(path: ':jcvideoplayer-lib')
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+
+}

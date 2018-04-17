@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    tools:context="com.tablet.moran.activity.BandPhoneActivity">
+
+    <!--中间内容区域-->
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/menu_anim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/s_menu_anim"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:id="@+id/back_menu_btn"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/back"
+                    style="@style/menu_text_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/phone"
+                        android:layout_width="120dp"
+                        android:layout_height="240dp" />
+                    <ImageView
+                        android:id="@+id/bar_code_iv"
+                        android:layout_marginTop="17dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/bar_code_default"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_common_moran_small"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="8dp"
+                        android:layout_gravity="top"
+                        android:gravity="left"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/band_mine1" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="8dp"
+                        style="@style/text_common_moran_small"
+                        android:layout_width="240dp"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/band_mine2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

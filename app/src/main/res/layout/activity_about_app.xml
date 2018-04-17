@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/splash_bg"
+    android:layout_height="match_parent"
+    tools:context="com.tablet.moran.activity.AboutAppActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/back_layout"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@mipmap/splash_circle_bg"
+            android:layout_width="780dp"
+            android:layout_height="680dp" />
+        <LinearLayout
+            android:id="@+id/tip_dialog_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/device_name"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/edit_name"
+                    style="@style/text_common_moran_small"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/total_storage"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="666G"
+                    android:id="@+id/all_volume_tv"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/storage_available"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="666G"
+                    android:id="@+id/rest_volume_tv"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/version_code"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="666.000"
+                    android:id="@+id/version_tv"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/mode_code"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/app_name_tv"
+                    android:text="ATM324k1801"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/serial_code"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/serial_num_tv"
+                    android:text="MoranV1.1"
+                    android:textSize="14sp"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/wifi_address"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/wifi_address_tv"
+                    android:text="MoranV1.1"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/about_space_line"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/bluetooth_address"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bt_address_tv"
+                    android:text="MoranV1.1"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_btn"
+            android:background="@drawable/corner_right_red"
+            style="@style/text_common_moran_small"
+            android:text="点击修改"
+            android:visibility="gone"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="700dp"
+            android:layout_marginLeft="240dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

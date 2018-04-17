@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context="com.tablet.moran.activity.PaintActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_paint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <include layout="@layout/delete_layout" />
+
+        <include layout="@layout/collect_layout" />
+
+        <include layout="@layout/back_layout" />
+        <!--加一个从下到上的动画效果-->
+        <LinearLayout
+            android:id="@+id/anim_LL"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_gravity="bottom"
+            android:background="@mipmap/transparent_bg_black"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title_paint"
+                style="@style/text_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:text="《游春图游春图游》" />
+
+            <LinearLayout
+                android:id="@+id/detail_LL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/author"
+                    android:gravity="left"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:gravity="left"
+                    style="@style/text_common_moran_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/category_paint"
+                    style="@style/text_common_moran_small"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="中国画 【年代】1942年作" />
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="【简介】"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/des_paint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="绢本，水墨"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="【赏析】"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/read_paint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="15dp"
+                        android:text="癸未九月写癸未九月写癸未九月写癸未九月写"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

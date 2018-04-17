@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--灰色按钮渐变背景 45%渐变一次，78%渐变一次-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape android:shape="rectangle">
+            <size
+                android:width="100dp"
+                android:height="10dp" />
+
+        </shape>
+    </item>
+
+    <item android:top="41.5dp">
+        <shape
+            android:shape="rectangle">
+
+            <solid android:color="@color/run_text_hint" />
+
+            <size
+                android:width="8dp"
+                android:height="0.5dp" />
+
+        </shape>
+
+    </item>
+
+
+</layer-list>

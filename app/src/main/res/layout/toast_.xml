@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_msg"
+    android:text="提示信息"
+    android:background="@drawable/toast_bg"
+    android:textSize="25sp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="60dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    android:paddingRight="60dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</TextView>

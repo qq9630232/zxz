@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tip_LL1"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:layout_width="470dp"
+    android:layout_height="410dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/tip_FL"
+        android:layout_width="440dp"
+        android:layout_height="380dp"
+        android:layout_gravity="right|bottom"
+        android:background="@mipmap/tip_bg_1">
+
+        <TextView
+            android:id="@+id/tip_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="11dp"
+            android:maxLength="75"
+            android:text="老婆，祝你生日快乐"
+            android:padding="30dp"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_gravity="left|top"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/yu_circle_bg" />
+
+</FrameLayout>

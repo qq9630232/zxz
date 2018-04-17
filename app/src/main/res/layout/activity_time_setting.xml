@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    tools:context="com.tablet.moran.activity.TimeSettingActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/back_layout"/>
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/menu_bg_transparent_black"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_common"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置时间" />
+
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:numbersBackgroundColor="@color/transparent"
+                android:numbersInnerTextColor="@color/white"
+                android:numbersSelectorColor="@color/white"
+                android:numbersTextColor="#a2a2a2"
+                android:timePickerMode="spinner"></TimePicker>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back_finish"
+                    android:src="@mipmap/back"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:id="@+id/finish_btn"
+                    android:text="完成"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:gravity ="center"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/menu_item_unselected"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

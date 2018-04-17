@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--灰色按钮渐变背景 45%渐变一次，78%渐变一次-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape android:shape="rectangle">
+            <size
+                android:width="100dp"
+                android:height="10dp" />
+
+            <gradient
+                android:angle="270"
+                android:endColor="#000000"
+                android:startColor="#22111111"
+                android:type="linear" />
+
+
+        </shape>
+    </item>
+
+    <!--<item android:top="18dp">-->
+        <!--<shape android:shape="rectangle">-->
+
+            <!--<size-->
+                <!--android:width="100dp"-->
+                <!--android:height="22dp" />-->
+
+            <!--<gradient-->
+                <!--android:angle="270"-->
+                <!--android:endColor="#88808080"-->
+                <!--android:centerColor="#888f8e8e"-->
+                <!--android:centerY="0.6"-->
+                <!--android:startColor="#88b3b3b3"-->
+                <!--android:type="linear" />-->
+
+        <!--</shape>-->
+
+    <!--</item>-->
+
+
+</layer-list>

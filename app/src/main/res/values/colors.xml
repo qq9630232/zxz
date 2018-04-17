@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimaryDark">#9b9b9b</color>
+    <color name="colorAccent">#535759</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="test">#70ffffff</color>
+
+    <color name="tutorial_transparent">#56000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="transparent_white">#0effffff</color>
+    <color name="black">#000201</color>
+    <color name="s_black">#555555</color>
+    <color name="r_black">#959595</color>
+    <color name="divider_grey">#e1e1e1</color>
+    <color name="tab_bg">#d7d7d7</color>
+    <!--text color-->
+    <color name="text_red">#f3351f</color>
+    <color name="text_gray">#9b9b9b</color>
+    <color name="text_gray2">#6e747f</color>
+    <color name="transparent_text_gray">#44f1e1e1</color>
+    <color name="transparent_text_dark_gray">#bb131418</color>
+    <color name="text_dark_green">#00d1c2</color>
+    <color name="text_owner_tab_grey">#939496</color>
+    <color name="text_gray_blue">#7084a2</color>
+    <color name="text_join_count">#F20561</color>
+    <!--background color-->
+    <color name="icon">#ff0000</color>
+    <color name="icon_gray">#9b9b9b</color>
+    <color name="bg_gray_light">#333333</color>
+    <color name="run_bg_gray">#f5f5f5</color>
+    <color name="run_text_hint">#cccccc</color>
+    <color name="run_text_hint_more">#6d6d6d</color>
+    <color name="run_text_selector_none">#bfbfbf</color>
+    <color name="run_text_gray">#b0b0b0</color>
+    <color name="run_text_gray_more">#4f4f4f</color>
+    <color name="run_special_bg">#ff424242</color>
+    <color name="run_special_tab_bg">#ff404040</color>
+    <color name="run_bg_gray_more">#eaeaea</color>
+
+    <color name="run_main_blue">#3050a8</color>
+
+    <color name="run_new_login_main">#1840ae</color>
+    <!--70%的#000000-->
+    <color name="run_fg_alpha">#80000000</color>
+    <color name="run_bg_white_alpha">#86ffffff</color>
+    <color name="run_red1">#cf4b4b</color>
+    <color name="bg_gray">#f5f5f5</color>
+    <color name="bg_gray_more">#eaeaea</color>
+    <color name="bg_gray_blue">#20242a</color>
+    <color name="bg_logo">#b5b5b5</color>
+    <color name="divider_light">#ebebeb</color>
+    <color name="divider_deep">#494c4e</color>
+    <color name="gray">#dfe0df</color>
+    <color name="owner_head_bg_grey">#565a5d</color>
+
+    <!--mainPage 上覆盖的图层1-->
+    <color name="mainpage_over1">#382626</color>
+    <color name="mainpage_cover2">#030000</color>
+
+    <!--search bar的灰色阴影边框-->
+    <color name="search_bg_shadow">#10030000</color>
+
+    <!--profile tab 最下面bar的背景色-->
+    <color name="profile_bottombar_bg">#393c3d</color>
+    <color name="dialog_bg">#5B5B5B</color>
+    <!--用户信息页面的按钮半透明背景 -->
+    <!--textcolor-->
+
+
+    <color name="blue">#9ed578</color>
+    <!-- 价格标题等提示的背景色-->
+    <color name="tips_bg">#4c4c4c</color>
+    <color name="bg_grey2">#f3f3f3</color>
+    <!--发布房源的 状态颜色-->
+    <color name="house_pubed">#9ed578</color>
+    <color name="house_pub_step">#edbf1b</color>
+    <!--消息界面-->
+    <color name="order_waitting">#edbf1b</color>
+    <color name="order_accepted">#00d1c2</color>
+    <color name="order_item_bg">#cacaca</color>
+    <color name="text_green">#00d1c2</color>
+    <color name="divider_grey_more">#dbdcdb</color>
+    <color name="wechat_green">#87d24b</color>
+
+    <color name="nopay_calendar">#ffb400</color>
+    <color name="accepted_calendar">#00d1c1</color>
+    <color name="shield_calendar">#dfe0df</color>
+
+    <!--地图颜色-->
+    <color name="map_circle">#3aff89</color>
+    <color name="map_circle_inflate">#572ff3e1</color>
+
+    <!-- 确认订单 ，日历筛选颜色-->
+    <color name="select_red">#ff5a60</color>
+    <color name="calendar_divide">#cccfcb</color>
+    <color name="calendar_text">#7e8387</color>
+
+    <color name="calendar_rent_bg">#f5f5f5</color>
+
+    <color name="calendar_unrent">#bebebe</color>
+
+    <color name="main_divide">#494c41</color>
+    <color name="main_act_bg">#9b9b9b</color>
+
+    <!--已验证的颜色-->
+    <color name="verified">#33a036</color>
+
+    <color name="profile_bg">#f7f7f7</color>
+    <color name="evalute_tint_bg">#66000000</color>
+
+    <!--退订政策线条的颜色-->
+    <color name="unsubscribe_green">#3fb350</color>
+    <color name="unsubscribe_yellow">#ffb525</color>
+    <color name="unsubscribe_red">#fe393d</color>
+
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <color name="coupon_bg">#dd000000</color>
+
+    <color name="black_pay">#535456</color>
+    <!--nice spinner-->
+    <color name="light_gray">#fff5f5f5</color>
+
+    <color name="orange">#FF6633</color>
+    <color name="purple">#9999cc</color>
+    <color name="purple_deep">#760ce8</color>
+    <color name="yellow">#ffd935</color>
+    <color name="transparent_black">#aa000b02</color>
+    <color name="transparent_black1">#77000b02</color>
+    <color name="transparent_grey">#cc222222</color>
+
+
+    <!--环信表情-->
+    <color name="emojicon_tab_selected">#D9D9D9</color>
+    <color name="emojicon_tab_nomal">#ffffff</color>
+
+    <color name="is_friend_bg">#33CC33</color>
+    <color name="location_bg">#999966</color>
+
+    <!--视频播放页面PK-->
+    <color name="bottom_bg">#55494c4e</color>
+
+    <!--分类-->
+    <color name="category_border">#68608A</color>
+    <color name="category_font">#B2A5EA</color>
+
+    <color name="pk_bg">#161C2B</color>
+    <color name="coin_donate">#FF0062</color>
+
+    <!--二维码-->
+    <color name="viewfinder_frame">#00000000</color>
+    <color name="viewfinder_laser">#ffd935</color>
+    <color name="viewfinder_mask">#00000000</color>
+    <!--<color name="viewfinder_mask">#80000000</color>-->
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

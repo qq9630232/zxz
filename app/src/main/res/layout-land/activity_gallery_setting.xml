@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg_land"
+    tools:context="com.tablet.moran.activity.GallerySettingActivity">
+
+    <!--中间内容区域-->
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/menu_anim"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/h_menu_anim"
+            android:layout_width="440dp"
+            android:layout_height="940dp"/>
+
+        <com.tablet.moran.view.CircleMenuView
+            android:id="@+id/circle_menu"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/back_menu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height"
+                    android:src="@mipmap/back"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    style="@style/menu_text_common_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/play_menu_15s"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/a_seconds"
+                    style="@style/menu_text_common_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_menu_30s"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/b_seconds"
+                    style="@style/menu_text_common_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/play_menu_2m"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/a_minutes"
+                    style="@style/menu_text_common_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_menu_10m"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/b_minutes"
+                    style="@style/menu_text_common_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_menu_30m"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/back"
+                    android:layout_width="@dimen/menu_height"
+                    android:layout_height="@dimen/menu_height" />
+
+                <TextView
+                    android:text="@string/c_minutes"
+                    style="@style/menu_text_common_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </com.tablet.moran.view.CircleMenuView>
+
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

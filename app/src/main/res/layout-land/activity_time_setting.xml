@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg_land"
+    tools:context="com.tablet.moran.activity.TimeSettingActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="380dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/menu_bg_transparent_black"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="22dp"
+                android:text="设置时间" />
+
+            <TimePicker
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:numbersBackgroundColor="@color/transparent"
+                android:numbersInnerTextColor="@color/white"
+                android:numbersSelectorColor="@color/white"
+                android:numbersTextColor="#a2a2a2"
+                android:timePickerMode="spinner"></TimePicker>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginRight="21dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/back"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:text="时间同步"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/menu_item_unselected"
+                    android:layout_width="171dp"
+                    android:layout_height="34dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/back"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:text="完成"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/menu_item_unselected"
+                    android:layout_width="171dp"
+                    android:layout_height="34dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
